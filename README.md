@@ -2,7 +2,7 @@
 Code which enables users to apply a trained XGBoost model to
  IRAC exoplanet or brown dwarf staring mode data
 
-#Summary
+# Summary
 The main systematic in high precision photometry with Spitzer IRAC  is
 the intrapixel response function.  We see variations in the fluxes in
 light curves due to the combination of under-sampling with small
@@ -25,26 +25,26 @@ This code only works on ch2 IRAC data (4.5microns) where the data is
 observed on the sweet spot pixel (pixel 15, 15 of the subarray or same
 pixel observed in full array)
 
-#Requirements
+# Requirements
 This code requires IDL, python, and jupyter notebooks
  
-IDL
-	pmap_correct - download here:  https://irachpp.spitzer.caltech.edu/page/contrib
-	included here -
-		box_centroider, dewrap2, fpa1t2, fpa2t2, get_centroids,
+ IDL
+ - pmap_correct - download here:  https://irachpp.spitzer.caltech.edu/page/contrib
+ - included here -
+	  - box_centroider, dewrap2, fpa1t2, fpa2t2, get_centroids,
 		 phot_exoplanet_csv
 
 Python
-	batman
-	exoparams
-	sklearn
-	astropy
-	scipy
-	pylab
-	lmfit
-	functools
+ - batman
+ - exoparams
+ - sklearn
+ - astropy
+ - scipy
+ - pylab
+ - lmfit
+ - functools
 
-#What is Included (and what does it do)
+# What is Included (and what does it do)
  - apply_ML_IRAC.ipynb is the main python code to apply model to science
 data
  - phot_exoplanet_csv.pro is the main IDL code to do photometry
@@ -53,7 +53,8 @@ data
  - XO3*.csv files are the photometry files for the 10 XO3 observations
  
 
-#How to use this code
+# How to use this code
+
 0. Download the pmap_correct.pro code and associated pmap files from the SSC
 website (they are too large to include with this github repository)
 
@@ -75,7 +76,8 @@ website (they are too large to include with this github repository)
    directory location, observation name, and planet name of the dataset in the top
    cell of the notebook.
  
-4. Further refinements:
+ 4. Further refinements:
+ 
    a)   Included here are two models which both are able to remove
    systematics (two .pkl files).  They are different and require
    different feature sets, but both can be accomodated with the csv

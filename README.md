@@ -95,10 +95,10 @@ website (they are too large to include with this github repository) https://irac
     eclipse depth and argument of periastron which are specific to
     XO3-b.
 	
-   - Plotting is really set up for 10 observations.  If you have
+    -  Plotting is really set up for 10 observations.  If you have
    more/less you will need to adjust those parameters.
 
-	- Running the python code should take maybe a minute for all 10
+    - Running the python code should take maybe a minute for all 10
     observations and plotting.  Running the idl photometry code takes longer - and
     will depend on how much data there is to be processed.
 	
